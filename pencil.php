@@ -58,3 +58,9 @@ echo "Pencil1 length: " . ($pencil1->getLength() ? "Long enough" : "Too short") 
 echo "Pencil1 color: " . $pencil1->getColor() . "<br>";
 echo "Pencil1 sharpness: " . ($pencil1->getSharpness() ? "Sharpened" : "Needs sharpening") . "<br>";
 echo "Pencil1 has eraser: " . ($pencil1->hasEraser() ? "Yes" : "No") . "<br>";
+
+$pencil2 = new pencil(4, "blue", 10, false);
+echo "Pencil2 length: " . ($pencil2->getLength() ? "Long enough" : "Too short") . "<br>";
+echo "Pencil2 color: " . $pencil2->getColor() . "<br>";
+echo "Pencil2 sharpness: " . ($pencil2->getSharpness() ? "Sharpened" : "Needs sharpening") . "<br>";
+echo "Pencil2 has eraser: " . ($pencil2->hasEraser() ? "Yes" : "No") . "<br>";
