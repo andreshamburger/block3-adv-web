@@ -1,0 +1,30 @@
+@startuml Species
+
+class Species {
+  +species_id
+  +species_name
+  +price
+}
+
+class Breeds {
+  +breeds_id
+  +breed_name
+  +is_mixed
+  +price
+}
+
+class Pets {
+  +pets_id
+  +price
+}
+
+class Toys {
+  +toys_id
+  +toy_name
+  +price
+}
+
+Species --> Breeds : has
+Species --> Pets : has
+Species --> Toys : has
+@enduml
