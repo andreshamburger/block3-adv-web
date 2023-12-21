@@ -1,13 +1,14 @@
 <?php
 
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-
-
+include_once '_includes/connection.php';
 include_once 'models/model.php';
 
+$connection2 = create_connection();
+$controller = new Controller($connection2);
 class Controller
 {
     private $model;
@@ -50,7 +51,7 @@ class Controller
     }
 }
 
-$connection2 = new connection_object("localhost", "andresDB", "Nd0d1f09?", "awb_project");
+$connection2 = create_connection();
 $controller = new Controller($connection2);
 
 if (isset($_POST['submit'])) {
