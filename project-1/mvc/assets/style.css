@@ -37,48 +37,57 @@ body {
   font-size: 1.2rem;
   cursor: pointer;
   font-weight: 600;
-}
-
-.btn:hover {
-  background-color: #fff;
-  color: #000000;
+  transition: 0.3s ease-in-out;
 }
 
 .btn.one{
   background-color: rgb(173, 63, 109);
+  transition: 0.3s ease-in-out;
 }
 
 .btn.two{
   background-color: rgb(107, 53, 154);
+  transition: 0.3s ease-in-out;
 }
 
 .btn.three{
   background-color: rgb(181, 97, 0);
+  transition: 0.3s ease-in-out;
 }
 
 .btn.four{
   background-color: rgb(0, 155, 163);
+  transition: 0.3s ease-in-out;
 }
 
 .btn.red{
   background-color: rgb(141, 0, 0);
+  transition: 0.3s ease-in-out;
 }
 
 .btn.blue{
   background-color: rgb(0, 0, 110);
+  transition: 0.3s ease-in-out;
 }
 
 
 .btn.green{
   background-color: rgb(0, 110, 0);
+  transition: 0.3s ease-in-out;
 }
 
+.btn:hover,
+.btn.one:hover,
+.btn.two:hover,
+.btn.three:hover,
+.btn.four:hover,
 .btn.red:hover,
 .btn.blue:hover,
-.btn.green:hover{
-  background-color: rgb(255, 255, 255);
+.btn.green:hover {
+  background-color: white;
   color: black;
 }
+
 
 .indextitle {
   text-align: center;
