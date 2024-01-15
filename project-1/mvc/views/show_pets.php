@@ -6,12 +6,12 @@
     foreach ($pets as $show_pets) {
       echo "<div class='cardflex'>
 
-        <div><b>Pet ID:</b>". $show_pets['pets_id'] . "</div>
-        <div><b>Pet Name: </b>" . $show_pets['pets_name'] . "</div><br>
-        <div><b>Pet Species: </b>" . $show_pets['species_name'] . "</div>
-        <div><b>Pet Breed: </b>" . $show_pets['breeds_name'] . "</div>
-        <div><b>Pet Age: </b>" . $show_pets['pets_age'] . "</div>
-        <div><b>Pet Gender: </b>" . $show_pets['pets_gender'] . "</div><br>
+        <div><b>Pet ID:</b>". $show_pets['pets_id'] . "</div><br>
+        <div><b>Pet Name: </b>" . $show_pets['pets_name'] . "</div>
+        <div><b>Species Name: </b>" . $show_pets['species_name'] . "</div>
+        <div><b>Breeds Name: </b>" . $show_pets['breeds_name'] . "</div>
+        <div><b>Pet Age: </b>" . $show_pets['pets_age'] . ' Years Old' . "</div><br>
+        <div><b>Pet Gender: </b>" . $show_pets['pets_gender'] . "</div>
         <div><b>Is it Neutered?: </b>" . ($show_pets['pets_neutered'] ? 'Yes' : 'No') . "</div>
         <div><b>Pet Price: </b>$" . $show_pets['pets_price'] . "</div>
         <div><b>Prefered Toy: </b>" . $show_pets['toys_name'] . "</div>
