@@ -5,7 +5,7 @@
     <label for="pets_name">Pet Name:</label>
     <input type="text" name="pets_name" placeholder="pets Name" value="<?php echo $pets['pets_name']; ?>" required>
 
-    <label for="species_name">Pet Specie:</label>
+    <label for="species_name">Species Name:</label>
     <?php
     if ($species) {
         echo "<select name='species_id' required>";
@@ -20,7 +20,7 @@
     }
     ?>
 
-    <label for="breeds_name">Pet Breed:</label>
+    <label for="breeds_name">Breeds Name:</label>
     <?php
     if ($breeds) {
         echo "<select name='breeds_id' required>";
